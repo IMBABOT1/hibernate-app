@@ -1,12 +1,18 @@
 package ru.geekbrains.hibernate.app;
 
-//import com.flamexander.hibernate.PrepareDataApp;
-import ru.geekbrains.hibernate.PrepareDataApp;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import ru.geekbrains.hibernate.*;
 
 
 public class MainApp {
 
     public static void main(String[] args) {
-       Prepae
+       PrepareDataApp.forcePrepareData();
+
+//        SessionFactory factory = new Configuration()
+//                .configure("configs/crud/hibernate.cfg.xml")
+//                .buildSessionFactory();
     }
 }

@@ -6,12 +6,13 @@ INSERT INTO customers (name) VALUES
 ('Willis B.');
 
 DROP TABLE IF EXISTS products CASCADE;
-CREATE TABLE simple_items (id bigserial PRIMARY KEY, title VARCHAR(255), price int);
-INSERT INTO simple_items (title, price) VALUES
-('box', 10),
-('sphere', 20),
-('door', 50),
-('camera', 500);
+CREATE TABLE products (id bigserial PRIMARY KEY, title VARCHAR(255), price int);
+INSERT INTO products (title, price) VALUES
+                                            ('box', 10),
+                                            ('sphere', 20),
+                                            ('maul', 100),
+                                            ('door', 50),
+                                            ('camera', 500);
 
 
 

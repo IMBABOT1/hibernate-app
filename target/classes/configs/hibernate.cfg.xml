@@ -13,7 +13,7 @@
         <property name="show_sql">true</property>
         <property name="current_session_context_class">thread</property>
 
-        <mapping class="ru.geekbrains.hibernate.Customers"/>
-        <mapping class="ru.geekbrains.hibernate.Products"/>
+        <mapping class="ru.geekbrains.hibernate.app.Customers"/>
+        <mapping class="ru.geekbrains.hibernate.app.Products"/>
     </session-factory>
 </hibernate-configuration>
