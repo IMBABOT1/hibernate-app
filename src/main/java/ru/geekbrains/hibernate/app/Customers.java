@@ -1,4 +1,4 @@
-package ru.geekbrains.hibernate;
+package ru.geekbrains.hibernate.app;
 
 import javax.persistence.*;
 
