@@ -15,4 +15,13 @@ INSERT INTO products (title, price) VALUES
                                             ('camera', 500);
 
 
+DROP TABLE IF EXISTS product_buyers CASCADE;
+CREATE TABLE product_buyers (customer_id bigint, product_id bigint, FOREIGN KEY (customer_id) REFERENCES customers (id), FOREIGN KEY (product_id) REFERENCES products (id));
+
+INSERT INTO product_buyers VALUES
+(2, 1),
+(2, 2),
+(2, 3);
+
+
 
